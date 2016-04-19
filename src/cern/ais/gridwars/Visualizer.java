@@ -120,7 +120,7 @@ public class Visualizer {
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
-		new Visualizer().runGame(new MovingBot(MovementCommand.Direction.DOWN), new IdleBot() );
+		new Visualizer().runGame(new PathfindingBot(), new MovingBot() );
 	}
 
 	public void runGame(PlayerBot bot1, PlayerBot bot2) throws FileNotFoundException
