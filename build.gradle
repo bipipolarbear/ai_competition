@@ -1,0 +1,25 @@
+apply plugin: 'maven'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+group = 'cern.ais.gridwars'
+version = '1.0-SNAPSHOT'
+
+mainClassName = "cern.ais.gridwars.Visualizer"
+
+repositories {
+	mavenCentral()
+	maven {
+		url 'http://clojars.org/repo/'
+	}
+}
+
+dependencies {
+	compile fileTree('lib/') {
+		exclude "emulator-1.0-SNAPSHOT.jar"
+	}
+}
+
+sourceSets.main {
+	groovy.srcDirs = ['src']
+}

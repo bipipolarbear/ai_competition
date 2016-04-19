@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emulator-1.0-SNAPSHOT.iml" filepath="$PROJECT_DIR$/.idea/modules/emulator-1.0-SNAPSHOT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emulator-1.0-SNAPSHOT_main.iml" filepath="$PROJECT_DIR$/.idea/modules/emulator-1.0-SNAPSHOT_main.iml" group="emulator-1.0-SNAPSHOT" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emulator-1.0-SNAPSHOT_test.iml" filepath="$PROJECT_DIR$/.idea/modules/emulator-1.0-SNAPSHOT_test.iml" group="emulator-1.0-SNAPSHOT" />
+    </modules>
+  </component>
+</project>
