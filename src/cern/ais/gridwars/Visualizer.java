@@ -15,6 +15,7 @@ import java.awt.event.ItemListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.nio.ByteBuffer;
+import java.nio.file.Path;
 import java.util.*;
 import java.util.List;
 
@@ -120,7 +121,7 @@ public class Visualizer {
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
-		new Visualizer().runGame(new PathfindingBot(), new MovingBot() );
+		new Visualizer().runGame(new PathfindingBot(), new PathfindingBot());
 	}
 
 	public void runGame(PlayerBot bot1, PlayerBot bot2) throws FileNotFoundException
