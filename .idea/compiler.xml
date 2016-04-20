@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ai_competition_main" target="1.8" />
+      <module name="ai_competition_test" target="1.8" />
       <module name="emulator-1.0-SNAPSHOT_main" target="1.8" />
       <module name="emulator-1.0-SNAPSHOT_test" target="1.8" />
     </bytecodeTargetLevel>
