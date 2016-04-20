@@ -1,13 +1,17 @@
 package cern.ais.gridwars;
 
+<<<<<<< HEAD
 import cern.ais.gridwars.command.MovementCommand;
 
+=======
+>>>>>>> 1d2fc79... Implement calculation of square distance between two cells.
 import java.net.CookieHandler;
 import java.util.*;
 
 /**
  * Created by Sapog on 4/19/2016.
  */
+<<<<<<< HEAD
 public final class Util {
     private static Random rng = new Random();
 
@@ -49,6 +53,10 @@ public final class Util {
     }
 
     public static int squareDistance(Coordinates from, Coordinates to) {
+=======
+public class Util {
+    static int squareDistance(Coordinates from, Coordinates to) {
+>>>>>>> 1d2fc79... Implement calculation of square distance between two cells.
         int xDist = from.getX() - to.getX();
         int yDist = from.getY() - to.getY();
         return xDist * xDist + yDist * yDist;

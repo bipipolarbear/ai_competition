@@ -121,7 +121,11 @@ public class Visualizer {
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
+<<<<<<< HEAD
 		new Visualizer().runGame(new PathfindingBot(), new PathfindingBot());
+=======
+		new Visualizer().runGame(new PathfindingBot(), new MovingBot() );
+>>>>>>> 1d2fc79... Implement calculation of square distance between two cells.
 	}
 
 	public void runGame(PlayerBot bot1, PlayerBot bot2) throws FileNotFoundException

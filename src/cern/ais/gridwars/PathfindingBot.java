@@ -8,8 +8,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.SortedSet;
 
+<<<<<<< HEAD
 import static cern.ais.gridwars.Util.getApproachingDirection;
 import static cern.ais.gridwars.Util.randomDirection;
+=======
+>>>>>>> 1d2fc79... Implement calculation of square distance between two cells.
 import static cern.ais.gridwars.Util.sortedByPopulation;
 
 /**
@@ -33,6 +36,7 @@ public class PathfindingBot implements PlayerBot {
         for (int y = 0; y < size; y++) {
             for (int x = 0; x < size; x++) {
                 if (universeView.belongsToMe(x, y)) {
+<<<<<<< HEAD
 
                     Long population = universeView.getPopulation(x, y);
                     Coordinates coord = universeView.getCoordinates(x, y);
@@ -75,6 +79,16 @@ public class PathfindingBot implements PlayerBot {
                             );
                             movementCommands.add(run);
                         }
+=======
+                    Long population = universeView.getPopulation(x, y);
+                    if (population > 5) {
+                        MovementCommand mc = new MovementCommand(
+                                universeView.getCoordinates(x, y),
+                                MovementCommand.Direction.RIGHT,
+                                5L
+                        );
+                        movementCommands.add(mc);
+>>>>>>> 1d2fc79... Implement calculation of square distance between two cells.
                     }
                 }
             }
